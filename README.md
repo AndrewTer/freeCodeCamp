@@ -1,4 +1,4 @@
 # FreeCodeCamp
 
 ## Social Media
-[FreeCodeCamp](https://www.freecodecamp.org/portfolio/andrew-terehin) | [GitHub](https://github.com/AndrewTer)
+[FreeCodeCamp](https://www.freecodecamp.org/portfolio/andrey-terehin) | [GitHub](https://github.com/AndrewTer)
