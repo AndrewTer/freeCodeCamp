@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>FreeCodeCamp: Tribute Page</title>
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <div id="form-block">
+    <p id="description">
+      (Field with * - required field)
+    </p>
+    <form id="survey-form" method="GET" action="">
+      <div class="rowTab">
+        <div class="labels">
+          <label id="name-label" for="name">* Your Name: </label>
+        </div>
+        <div class="fields">
+          <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+        </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label id="email-label" for="email">* Your Email: </label>
+        </div>
+        <div class="fields">
+          <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+        </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label id="number-label" for="age">* Age: </label>
+        </div>
+        <div class="fields">
+          <input type="number" name="age" id="number" min="1" max="90" class="input-field" placeholder="1-90">
+        </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label for="currentPos">Your gender</label>
+        </div>
+        <div class="fields">
+          <select id="dropdown" name="currentPos" class="dropdown">
+        <option disabled value>Select an option</option>
+        <option  value="man">man</option>
+        <option value="woman">woman</option>
+        <option value="other">no answer</option>
+      </select>
+        </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label for="userhobby">* Do you have a hobby?</label>
+        </div>
+        <div class="fields">
+          <ul style="list-style: none;">
+            <li class="radio"><label>Yes<input name="radio-buttons" value="1"  type="radio" class="userhobby" ></label></li>
+            <li class="radio"><label>Maybe<input name="radio-buttons" value="2"  type="radio" class="userhobby" ></label></li>
+            <li class="radio"><label>Not sure<input name="radio-buttons" value="3"  type="radio" class="userhobby" ></label></li>
+            <li class="radio"><label>No<input name="radio-buttons" value="4"  type="radio" class="userhobby" ></label></li>
+          </ul>
+        </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label for="most-like">What do you like most in our company: </label>
+        </div>
+        <div class="fields">
+          <select id="most-like" name="mostLike" class="dropdown">
+            <option disabled selected value>Select an option</option>
+            <option value="atmosphere">Company atmosphere</option>
+            <option value="tasks">Variety of tasks</option>
+            <option value="community">Community</option>
+          </select>
+        </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label for="preferences">What position are you applying for:</label>
+        </div>
+        <div class="fields">
+          <ul id="preferences" style="list-style: none;">
+            <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userhobby">System(s) Administrator</label></li>
+            <li class="checkbox"><label><input name="prefer" value="2" type="checkbox" class="userhobby">Network Administrator</label></li>
+            <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userhobby">System(s) Engineer</label></li>
+            <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userhobby">Senior Engineer</label></li>
+            <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userhobby">Software Developer</label></li>
+            <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userhobby">Project Manager</label></li>
+            <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userhobby">Team Leader</label></li>
+          </ul>
+        </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label for="comments">Your Comments </label>
+        </div>
+        <div class="fields">
+          <textarea id="comments" class="input-field" name="comment" placeholder="Enter your comments here..."></textarea>
+        </div>
+      </div>
+      <button id="submit" type="submit">Complete</button>
+    </form>
+  </div>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
