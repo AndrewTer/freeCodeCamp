@@ -1,0 +1,103 @@
+body {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-align: center;
+  background-image: url("http://pattern4site.ru/images/fabric/_rebig/36-chernaya-tekstura-tkani-foto.png");
+  margin: 0;
+  color: #747b8e;
+  word-wrap: break-word;
+}
+
+h1 {
+  font-family: Times New Roman, serif;
+}
+
+h3 {
+  font-size: 1.4rem;
+  border-top: 0.3px solid #747b8e;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 10px;
+}
+
+#main {
+  margin: 30px 0px;
+}
+
+@media screen and (max-width: 460px) {
+  #main {
+    margin: 0;
+  }
+}
+
+#up-part {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  margin: 0;
+}
+
+#image {
+  border-radius: 5%;
+  margin: 0 auto;
+  max-width: 40%;
+  display: block;
+  height: auto;
+}
+
+#img-div {
+  padding: 10px;
+  margin: 0;
+}
+
+#img-caption {
+  margin-top: 20px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-size: 1.2rem;
+}
+
+#films-list {
+  list-style-type: none;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  list-style-position: inside;
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+  margin: 0 100px 0 100px;
+  padding: 10px 0 10px 0;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 2%;
+}
+
+#films-list li {
+  margin: 0;
+  padding: 5px;
+}
+
+#facts {
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  margin: 0 100px 0 100px;
+  padding: 10px 0 10px 0;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 2%;
+}
+
+.fact {
+  margin: 5px 30px 5px 30px; 
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.fact:hover {
+  background: rgba(255, 255, 255, 0.07);
+}
+
+#tribute-link {
+  text-decoration: none;
+  border-bottom: 1px dashed #747b8e;
+  color: #747b8e;
+  font-size: 1.3rem;
+}
+
+#tribute-link:hover {
+  color: #747bc8;
+}
