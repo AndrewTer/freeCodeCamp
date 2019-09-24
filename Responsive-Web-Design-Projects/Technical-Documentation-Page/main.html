@@ -1,0 +1,434 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<nav id="navbar">
+  <header>Node.js</header>
+  <ul>
+    <li><a class="nav-link" href="#Begin">Begin</a></li>
+    <li>
+      <a class="nav-link" href="#Introduction"
+        >Introduction</a
+      >
+    </li>
+    <li>
+      <a class="nav-link" href="#Get_Started">Get Started</a>
+    </li>
+    <li><a class="nav-link" href="#Modules">Modules</a></li>
+    <li><a class="nav-link" href="#HTTP_Module">HTTP Module</a></li>
+    <li><a class="nav-link" href="#URL_Module">URL Module</a></li>
+    <li><a class="nav-link" href="#Reference">Reference</a></li>
+  </ul>
+</nav>
+<main id="main-doc">
+  <section class="main-section" id="Begin">
+    <header>Begin</header>
+    <article>
+      <p>
+        Node.js is an open source server environment. Node.js allows you to run JavaScript on the server.
+      </p>
+      <h3>Learning by Examples</h3>
+      <p>Our "Show Node.js" tool makes it easy to learn Node.js, it shows both the code and the result.</p>
+      <h4>Example</h4>
+      <code>
+        var http = require('http');
+        
+        http.createServer(function (req, res) {
+        &nbsp; res.writeHead(200, {'Content-Type': 'text/plain'});
+        &nbsp; res.end('Hello World!');
+        }).listen(8080);
+      </code>
+      
+      <h3>Examples Running in the Command Line Interface</h3>
+      <p>In this tutorial there will be some examples that are better explained by displaying the result in the command line interface.</p>
+      <p>When this happens, The "Show Node.js" tool will show the result in a black screen on the right:</p>
+      
+      <h4>Example</h4>
+      <code>
+      console.log('This example is different!');
+      console.log('The result is displayed in the Command Line Interface');
+      </code>
+      
+      <h3>Download Node.js</h3>
+      <p>Download Node.js from the official Node.js web site: https://nodejs.org</p>
+      
+    </article>
+  </section>
+  
+  <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+    <article>
+      <h3>What is Node.js?</h3>
+
+      <ul>
+        <li>Node.js is an open source server environment</li>
+        <li>Node.js is free</li>
+        <li>Node.js runs on various platforms (Windows, Linux, Unix, Mac OS X, etc.)</li>
+        <li>Node.js uses JavaScript on the server</li>
+      </ul>
+      
+      <h3>Why Node.js?</h3>
+      
+      <p>Node.js uses asynchronous programming!</p>
+      <p>A common task for a web server can be to open a file on the server and return the content to the client.</p>
+      <p>Here is how PHP or ASP handles a file request:</p>
+      
+      <ol>
+        <li>Sends the task to the computer's file system.</li>
+        <li>Waits while the file system opens and reads the file.</li>
+        <li>Returns the content to the client.</li>
+        <li>Ready to handle the next request.</li>
+      </ol>
+      
+      <p>Here is how Node.js handles a file request:</p>
+      <ol>
+        <li>Sends the task to the computer's file system.</li>
+        <li>Ready to handle the next request.</li>
+        <li>When the file system has opened and read the file, the server returns the content to the client.</li>
+      </ol>
+        
+      <p>Node.js eliminates the waiting, and simply continues with the next request.</p>
+      <p>Node.js runs single-threaded, non-blocking, asynchronously programming, which is very memory efficient.</p>
+      
+      <h3>What Can Node.js Do?</h3>
+
+      <ul>
+        <li>Node.js can generate dynamic page content</li>
+        <li>Node.js can create, open, read, write, delete, and close files on the server</li>
+        <li>Node.js can collect form data</li>
+        <li>Node.js can add, delete, modify data in your database</li>
+      </ul>
+      
+      <h3>What is a Node.js File?</h3>
+
+      <ul>
+        <li>Node.js files contain tasks that will be executed on certain events</li>
+        <li>A typical event is someone trying to access a port on the server</li>
+        <li>Node.js files must be initiated on the server before having any effect</li>
+        <li>Node.js files have extension ".js"</li>
+      </ul>
+      
+    </article>
+  </section>
+  
+  <section class="main-section" id="Get_Started">
+    <header>Get Started</header>
+    <article>
+      <h3>Download Node.js</h3>
+      <p>The official Node.js website has installation instructions for Node.js: https://nodejs.org</p>
+      <h3>Getting Started</h3>
+      <p>Once you have downloaded and installed Node.js on your computer, let's try to display "Hello World" in a web browser.</p>
+      <p>Create a Node.js file named "myfirst.js", and add the following code:</p>
+      <p>myfirst.js</p>
+      
+      <code>
+      var http = require('http');
+
+      http.createServer(function (req, res) {
+      &nbsp; res.writeHead(200, {'Content-Type': 'text/html'});
+      &nbsp; res.end('Hello World!');
+      }).listen(8080);
+      </code>
+      
+      <p>Save the file on your computer: C:\Users\Your Name\myfirst.js</p>
+      <p>The code tells the computer to write "Hello World!" if anyone (e.g. a web browser) tries to access your computer on port 8080.</p>
+      <p>For now, you do not have to understand the code. It will be explained later.</p>
+      
+      <h3>Command Line Interface</h3>
+      
+      <p>Node.js files must be initiated in the "Command Line Interface" program of your computer.</p>
+      <p>How to open the command line interface on your computer depends on the operating system. For Windows users, press the start button and look for "Command Prompt", or simply write "cmd" in the search field.</p>
+      <p>Navigate to the folder that contains the file "myfirst.js", the command line interface window should look something like this:</p>
+      <code>
+        C:\Users\Your Name>_
+      </code>
+      
+      <h3>Initiate the Node.js File</h3>
+      
+      <p>The file you have just created must be initiated by Node.js before any action can take place.</p>
+      <p>Start your command line interface, write node myfirst.js and hit enter:</p>
+      <p>Initiate "myfirst.js":</p>
+      
+      <code>
+        C:\Users\Your Name>node myfirst.js
+      </code>
+      
+      <p>Now, your computer works as a server!</p>
+      <p>If anyone tries to access your computer on port 8080, they will get a "Hello World!" message in return!</p>
+      <p>Start your internet browser, and type in the address: http://localhost:8080</p>
+      
+    </article>
+  </section>
+  <section class="main-section" id="Modules">
+    <header>Modules</header>
+    <article>
+      <h3>What is a Module in Node.js?</h3>
+      
+      <p>Consider modules to be the same as JavaScript libraries.</p>
+      <p>A set of functions you want to include in your application.</p>
+      
+      <h3>Built-in Modules</h3>
+      
+      <p>Node.js has a set of built-in modules which you can use without any further installation.</p>
+      <p>Look at our Built-in Modules Reference for a complete list of modules.</p>
+      
+      <h3>Include Modules</h3>
+      
+      <p>To include a module, use the require() function with the name of the module:</p>
+
+      <code>
+        var http = require('http');
+      </code>
+      <p>Now your application has access to the HTTP module, and is able to create a server:</p>
+
+      <code>
+        http.createServer(function (req, res) {
+        &nbsp; res.writeHead(200, {'Content-Type': 'text/html'});
+        &nbsp; res.end('Hello World!');
+        }).listen(8080);
+      </code>
+      
+      <h3>Create Your Own Modules</h3>
+      
+      <p>You can create your own modules, and easily include them in your applications.</p>
+      <p>The following example creates a module that returns a date and time object:</p>
+
+      <h4>Example</h4>
+
+      <p>Create a module that returns the current date and time:</p>
+
+      <code>
+        exports.myDateTime = function () {
+        &nbsp; return Date();
+        };
+      </code>
+      
+      <p>Use the exports keyword to make properties and methods available outside the module file.</p>
+      <p>Save the code above in a file called "myfirstmodule.js"</p>
+
+      <h3>Include Your Own Module</h3>
+        
+      <p>Now you can include and use the module in any of your Node.js files.</p>
+
+      <h4>Example</h4>
+      
+      <p>Use the module "myfirstmodule" in a Node.js file:</p>
+
+      <code>
+        var http = require('http');
+        var dt = require('./myfirstmodule');
+
+        http.createServer(function (req, res) {
+        &nbsp; res.writeHead(200, {'Content-Type': 'text/html'});
+        &nbsp; res.write("The date and time are currently: " + dt.myDateTime());
+        &nbsp; res.end();
+        }).listen(8080);
+      </code>
+      
+      <p>Notice that we use ./ to locate the module, that means that the module is located in the same folder as the Node.js file.</p>
+      <p>Save the code above in a file called "demo_module.js", and initiate the file:</p>
+
+      <p>Initiate demo_module.js:</p>
+
+      <code>
+        C:\Users\Your Name>node demo_module.js
+      </code>
+      
+      <p>If you have followed the same steps on your computer, you will see the same result as the example: http://localhost:8080</p>
+
+    </article>
+  </section>
+  
+  <section class="main-section" id="HTTP_Module">
+    <header>HTTP Module</header>
+    <article>
+      <h3>The Built-in HTTP Module</h3>
+      
+      <p>Node.js has a built-in module called HTTP, which allows Node.js to transfer data over the Hyper Text Transfer Protocol (HTTP).</p>
+
+      <p>To include the HTTP module, use the require() method:</p>
+      
+      <code>
+        var http = require('http');
+      </code>
+      
+      <h3>Node.js as a Web Server</h3>
+
+      <p>The HTTP module can create an HTTP server that listens to server ports and gives a response back to the client.</p>
+
+      <p>Use the createServer() method to create an HTTP server:<p>
+
+      <h4>Example</h4>
+      
+      <code>
+        var http = require('http');
+
+        //create a server object:
+        http.createServer(function (req, res) {
+        &nbsp; res.write('Hello World!'); //write a response to the client
+        &nbsp; res.end(); //end the response
+        }).listen(8080); //the server object listens on port 8080
+      </code>
+        
+      <p>The function passed into the http.createServer() method, will be executed when someone tries to access the computer on port 8080.</p>
+
+      <p>Save the code above in a file called "demo_http.js", and initiate the file:</p>
+
+      <p>Initiate demo_http.js:</p>
+
+      <code>
+        C:\Users\Your Name>node demo_http.js
+      </code>
+      
+      <p>If you have followed the same steps on your computer, you will see the same result as the example: http://localhost:8080</p>
+      
+      <h3>Add an HTTP Header</h3>
+      
+      <p>If the response from the HTTP server is supposed to be displayed as HTML, you should include an HTTP header with the correct content type:</p>
+
+      <h4>Example</h4>
+      
+      <code>
+      var http = require('http');
+      http.createServer(function (req, res) {
+      &nbsp; res.writeHead(200, {'Content-Type': 'text/html'});
+      &nbsp; res.write('Hello World!');
+      &nbsp; res.end();
+      }).listen(8080);
+      </code>
+      
+      <p>The first argument of the res.writeHead() method is the status code, 200 means that all is OK, the second argument is an object containing the response headers.</p>
+
+      <h3>Read the Query String</h3>
+      
+      <p>The function passed into the http.createServer() has a req argument that represents the request from the client, as an object (http.IncomingMessage object).</p>
+
+      <p>This object has a property called "url" which holds the part of the url that comes after the domain name:</p>
+
+      <p>demo_http_url.js</p>
+
+      <code>
+      var http = require('http');
+      http.createServer(function (req, res) {
+      &nbsp; res.writeHead(200, {'Content-Type': 'text/html'});
+      &nbsp; res.write(req.url);
+      &nbsp; res.end();
+      }).listen(8080);
+      </code>
+       
+      <p>Save the code above in a file called "demo_http_url.js" and initiate the file:</p>
+
+      <p>Initiate demo_http_url.js:</p>
+
+      <code>
+        C:\Users\Your Name>node demo_http_url.js
+      </code>
+      
+      <p>If you have followed the same steps on your computer, you should see two different results when opening these two addresses:</p>
+
+      <p>http://localhost:8080/summer</p>
+
+      <p>Will produce this result:</p>
+
+      <code>
+        /summer
+      </code>
+      
+      <p>http://localhost:8080/winter</p>
+
+      <p>Will produce this result:</p>
+
+      <code>
+        /winter
+      </code>
+      
+      <h3>Split the Query String</h3>
+      
+      <p>There are built-in modules to easily split the query string into readable parts, such as the URL module.</p>
+
+      <h4>Example</h4>
+      
+      <p>Split the query string into readable parts:</p>
+
+      <code>
+        var http = require('http');
+        var url = require('url');
+
+        http.createServer(function (req, res) {
+        &nbsp; res.writeHead(200, {'Content-Type': 'text/html'});
+        &nbsp; var q = url.parse(req.url, true).query;
+        &nbsp; var txt = q.year + " " + q.month;
+        &nbsp; res.end(txt);
+        }).listen(8080);
+      </code>
+      
+      <p>Save the code above in a file called "demo_querystring.js" and initiate the file:</p>
+
+      <p>Initiate demo_querystring.js:</p>
+
+      <code>
+        C:\Users\Your Name>node demo_querystring.js
+      </code>
+      
+      <p>The address:</p>
+
+      <p>http://localhost:8080/?year=2017&month=July</p>
+
+      <p>Will produce this result:</p>
+
+      <code>
+        2017 July
+      </code>
+      
+    </article>
+  </section>
+  
+  <section class="main-section" id="URL_Module">
+    <header>URL Module</header>
+    <article>
+      
+      <h3>The Built-in URL Module</h3>
+      
+      <p>The URL module splits up a web address into readable parts.</p>
+      <p>To include the URL module, use the require() method:</p>
+
+      <code>
+        var url = require('url');
+      </code>
+      
+      <p>Parse an address with the url.parse() method, and it will return a URL object with each part of the address as properties:</p>
+          
+      <h4>Example</h4>
+      
+      <p>Split a web address into readable parts:</p>
+      
+      <code>
+        var url = require('url');
+        var adr = 'http://localhost:8080/default.htm?year=2017&month=february';
+        var q = url.parse(adr, true);
+
+        console.log(q.host); //returns 'localhost:8080'
+        console.log(q.pathname); //returns '/default.htm'
+        console.log(q.search); //returns '?year=2017&month=february'
+
+        var qdata = q.query; //returns an object: { year: 2017, month: 'february' }
+        console.log(qdata.month); //returns 'february'
+      </code>
+
+    </article>
+  </section>
+  
+  <section class="main-section" id="Reference">
+    <header>Reference</header>
+    <article>
+      <ul>
+        <li>
+          All the documentation in this page is taken from
+          <a
+            href="https://www.w3schools.com/nodejs/default.asp"
+            target="_blank"
+            >w3schools.com</a
+          >
+        </li>
+      </ul>
+    </article>
+  </section>
+  
+</main>
