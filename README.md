@@ -14,7 +14,7 @@
 Yes, it was better to make the text color white, as an option.
 ![Product Landing Page](https://raw.githubusercontent.com/AndrewTer/freeCodeCamp/master/Responsive-Web-Design-Projects/Product-Landing-Page/product_landing_page.png)
 
-#### [Responsive Web Design Certification](https://www.freecodecamp.org/certification/andrey-terehin/responsive-web-design)
+### [Responsive Web Design Certification](https://www.freecodecamp.org/certification/andrey-terehin/responsive-web-design)
 
 ## Social Media
 [FreeCodeCamp](https://www.freecodecamp.org/portfolio/andrey-terehin) | [GitHub](https://github.com/AndrewTer)
