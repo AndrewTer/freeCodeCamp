@@ -10,13 +10,7 @@ function palindrome(str)
   let reverse_lower_case_string = lower_case_string.split('').reverse().join('');
 
   // сравнение исходной строки без пробелов и спец.символов с перевёрнутой исходной строкой без пробелов и спец.символов
-  if (lower_case_string.includes(reverse_lower_case_string))
-  {
-    return true;
-  } else
-  {
-    return false;
-  }
+  return lower_case_string.includes(reverse_lower_case_string) ? true : false;
 }
 
 palindrome("A man, a plan, a canal. Panama.");
