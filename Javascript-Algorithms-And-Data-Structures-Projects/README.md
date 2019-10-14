@@ -69,3 +69,5 @@
   | Ten Dollars         | $10   (TEN)         |
   | Twenty Dollars      | $20   (TWENTY)      |
   | One-hundred Dollars | $100  (ONE HUNDRED) |
+
+ #### [JavaScript Algorithms and Data Structures Certification](https://www.freecodecamp.org/certification/andrey-terehin/javascript-algorithms-and-data-structures)
