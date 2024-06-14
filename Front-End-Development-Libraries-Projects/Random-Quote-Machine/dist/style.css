@@ -1,0 +1,36 @@
+body {
+  height: 100vh;
+}
+#quote-box {
+  width: 450px;
+  background: white;
+  border-radius: 5px;
+}
+#quote-box #text {
+  font-size: 25px;
+  font-style: italic;
+}
+#quote-box #author {
+  font-size: 15px;
+}
+#quote-box #new-quote {
+  color: white;
+}
+#quote-box #tweet-quote p {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+}
+#quote-box #tweet-quote:hover {
+  filter: saturate(4);
+}
+#quote-box button {
+  height: 40px;
+  font-size: 16px;
+}
+#quote-box button:hover {
+  filter: saturate(4);
+}
+#quote-box button:focus {
+  box-shadow: none;
+}
