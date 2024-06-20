@@ -1,0 +1,70 @@
+* {
+  font-family: "Fira Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #062643;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+#title {
+  color: #FFFFFF;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  padding: 30px;
+  background: #FDFDFD;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 1);
+  border-radius: 15px;
+}
+
+#app label {
+  font-size: 15px;
+  margin: 0 0 10px 0;
+}
+
+#app div {
+  display: flex;
+  flex-direction: row;
+}
+
+#text-input {
+  margin: 0 auto 0 0;
+  border: none;
+  border-bottom: 1px solid #062643;
+}
+
+#check-btn {
+  color: #FFFFFF;
+  cursor: pointer;
+  margin: 0 0 0 auto;
+  padding: 7px 15px;
+  background: #062643;
+  border: none;
+  border-radius: 10px;
+}
+
+#check-btn:hover {
+  background: #115A9C;
+}
+
+#result {
+  color: #062643;
+  font-size: 17px;
+  text-align: center;
+  margin: 0;
+}
