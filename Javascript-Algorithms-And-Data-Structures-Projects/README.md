@@ -7,3 +7,9 @@ A palindrome is a word or sentence that's spelled the same way both forward and 
 <p align="center">
   <img width="60%" src="https://github.com/AndrewTer/freeCodeCamp/assets/33009070/361fe752-97b9-45d3-a83f-ee471eff93dc">
 </p>
+
+#### [Roman Numeral Converter](https://github.com/AndrewTer/freeCodeCamp/blob/master/Javascript-Algorithms-And-Data-Structures-Projects/Roman-Numeral-Converter)
+
+<p align="center">
+  <img width="60%" src="https://github.com/AndrewTer/freeCodeCamp/assets/33009070/fbd7e80e-07ae-439b-a920-2c8e4a5b69e0">
+</p>
