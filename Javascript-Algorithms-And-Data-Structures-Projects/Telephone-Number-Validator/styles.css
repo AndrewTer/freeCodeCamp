@@ -1,0 +1,64 @@
+* {
+  font-family: "Fira Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F3F6F4;
+}
+
+main {
+  background: #444444;
+  border: 5px solid #000000;
+  border-radius: 20px;
+}
+
+p {
+  color: #FFFFFF;
+  font-size: 14px;
+}
+
+#camera {
+  width: 40%;
+  height: 20px;
+  background: #000000;
+  border-radius: 0 0 15px 15px;
+}
+
+#line {
+  width: 40%;
+  height: 3px;
+  background: #FFFFFF;
+  border-radius: 90px;
+}
+
+#user-input {
+  padding: 4px 7px;
+  border: none;
+  border-radius: 10px;
+}
+
+#user-input:focus {
+  border: none;
+  outline: none;
+}
+
+#results-div {
+  height: 20px;
+  font-size: 15px;
+  margin: .5rem .5rem 250px .5rem;
+}
+
+.btn {
+  width: 45%;
+  color: #444444;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 10px !important;
+}
+
+#check-btn {
+  margin-right: auto;
+}
