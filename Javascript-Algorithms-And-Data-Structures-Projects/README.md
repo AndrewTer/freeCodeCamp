@@ -13,3 +13,9 @@ A palindrome is a word or sentence that's spelled the same way both forward and 
 <p align="center">
   <img width="60%" src="https://github.com/AndrewTer/freeCodeCamp/assets/33009070/fbd7e80e-07ae-439b-a920-2c8e4a5b69e0">
 </p>
+
+#### [Telephone Number Validator](https://github.com/AndrewTer/freeCodeCamp/tree/master/Javascript-Algorithms-And-Data-Structures-Projects/Telephone-Number-Validator)
+
+<p align="center">
+  <img width="60%" src="https://github.com/AndrewTer/freeCodeCamp/assets/33009070/86f70736-9731-4e64-b907-eb40502e8433">
+</p>
