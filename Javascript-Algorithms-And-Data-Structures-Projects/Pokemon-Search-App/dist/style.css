@@ -1,0 +1,121 @@
+* {
+  font-family: "Fira Sans", sans-serif;
+}
+body {
+  height: 100vh;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: #00D1FF !important;
+}
+main {
+  background: #F9F9F9;
+  border: 1px solid #BCBCBC;
+  border-radius: 20px;
+}
+#search-input {
+  padding: 3px 10px;
+  margin: 0 5px 0 0;
+  border: 1px solid #000000;
+  border-radius: 15px;
+}
+#search-input:focus {
+  outline: none;
+}
+#search-button {
+  width: 30px;
+  height: 30px;
+  margin: 0 0 0 5px;
+  background: #fbfbfb;
+  border: 1px solid #000000;
+  border-radius: 90%;
+}
+#sprite img {
+  width: 150px;
+  height: 150px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid #BCBCBC;
+  border-radius: 15px;
+}
+#pokemon-name,
+#pokemon-id {
+  font-size: 20px;
+  font-weight: bold;
+}
+#types p {
+  padding: 2px 10px;
+  margin: 5px;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 15px;
+}
+#height,
+#weight {
+  font-weight: bold;
+}
+#info p {
+  border-bottom: 1px dashed #BCBCBC;
+}
+#info p:last-child {
+  border-bottom: none;
+}
+#info p span:first-child {
+  margin: 0 auto 0 0;
+  font-size: 13px;
+  font-weight: bold;
+}
+/* Pokemon types color */
+.normal {
+  background: #b7b7aa;
+}
+.fire {
+  background: #ff6f52;
+}
+.water {
+  background: #42a1ff;
+}
+.electric {
+  background: #fecc33;
+}
+.grass {
+  background: #78cc55;
+}
+.ice {
+  background: #66ccfe;
+}
+.fighting {
+  background: #d3887e;
+}
+.poison {
+  background: #c68bb7;
+}
+.ground {
+  background: #dfba52;
+}
+.flying {
+  background-color: #8899ff;
+}
+.psychic {
+  background: #ff66a3;
+}
+.bug {
+  background: #aabb23;
+}
+.rock {
+  background: #baaa66;
+}
+.ghost {
+  background: #9995d0;
+}
+.dragon {
+  background: #9e93f1;
+}
+.dark {
+  background: #b59682;
+}
+.steel {
+  background: #abaabb;
+}
+.fairy {
+  background: #ed99ed;
+}
